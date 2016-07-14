@@ -25,7 +25,7 @@ __license__ = 'GPLv3'
 import os
 
 from .account import Account, Authentication, GuestSessions, Lists
-from .base import APIKeyError
+from .exceptions import APIKeyError
 from .changes import Changes
 from .configuration import Configuration, Certifications, Timezones
 from .discover import Discover
@@ -43,5 +43,4 @@ def _get_env_key(key):
         return None
 
 API_KEY = _get_env_key('TMDB_API_KEY')
-API_VERSION = '3'
 
