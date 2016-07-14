@@ -13,6 +13,8 @@ Makefile
 # editors
 ## Vim files
 .*.swp
+## IntelliJ IDEA
+*.iml
 
 # other
 notes
